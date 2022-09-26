@@ -11,6 +11,28 @@ app-logo {
   cursor: pointer;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  margin-right: auto;
+  padding-left: 24px;
+  -webkit-font-smoothing: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.brand_logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.brand_title {
+  color: #fff;
+}
+
 .hamburger-icon {
   margin-right: 30px;
   margin-left: -4px;
@@ -35,6 +57,10 @@ app-logo {
       }
     }
   }
+}
+
+.example-app-name {
+  color: #ffffff;
 }
 
 mat-sidenav-container {
@@ -66,9 +92,9 @@ mat-sidenav-container {
 
   mat-sidenav-content {
     background: #F5F5F5;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // padding-top: 20px;
   }
 }
 

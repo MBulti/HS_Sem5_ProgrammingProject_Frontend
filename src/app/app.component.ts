@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,16 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class AppComponent {
   title = 'Recommender-Frontend';
   @ViewChild('sidenav') sidenav: MatSidenav | undefined;
-  isExpanded = true;
+  isExpanded = false;
   showSubmenu: boolean = false;
   isShowing = false;
   showSubSubMenu: boolean = false;
+
+  constructor(private router: Router) { }
+
+  switchUrl() {
+    this.router.navigate(['/']);
+  }
 
   mouseenter() {
     if (!this.isExpanded) {
